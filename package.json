@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "allamaprabhu-frame-print": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "node-modules": "^0.0.1",
+    "nodemon": "^3.1.0",
+    "postcss-scss": "^4.0.9",
+    "qr": "^0.2.4",
+    "qr-image": "^3.2.0",
+    "stylelint-vscode": "^7.0.0-21"
+  },
+  "devDependencies": {
+    "stylelint-config-standard-scss": "^13.1.0"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "name": "web-resources",
+  "version": "1.0.0",
+  "description": "Welocme Full Stack Development",
+  "main": "Node.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allamaprabhu99/node.git"
+  },
+  "keywords": [
+    "Developer"
+  ],
+  "author": "Allamaprabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allamaprabhu99/node/issues"
+  },
+  "homepage": "https://github.com/Allamaprabhu99/node#readme"
+}

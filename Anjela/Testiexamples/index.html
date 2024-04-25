@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h2>User Login</h2>
+    <form id="loginForm">
+      <label for="username">Username :</label>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" required><br><br>
+
+      <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <p id="loginMessage"></p>
+
+    <script>
+      function login() {
+        // Get input values
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Example: Check if the username and password match
+        if (username === 'username' && password === 'password') {
+          document.getElementById('loginMessage').innerText = 'Login successful!';
+        } else {
+          document.getElementById('loginMessage').innerText = 'Invalid username or password. Try again.';
+        }
+      }
+    </script>
+
+  </body>
+  </html>

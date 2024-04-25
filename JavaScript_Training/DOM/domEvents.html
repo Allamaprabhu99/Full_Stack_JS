@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Enter username"
+      onchange="handlepw(event)"
+    />
+    <p id="errmsg"></p>
+    <input id="pw" type="password" placeholder="Enter Pw" />
+    <br />
+    <br />
+    <input id="cpw" type="password" placeholder="Confirm pw" />
+    <br />
+    <button onclick="handlepw()">Register</button>
+
+    <script>
+      function handlepw(e) {
+        console.log(e.target.value);
+        let uname = e.target.value;
+        if (uname.length < 5) {
+          document.getElementById("errmsg").innerHTML =
+            "Pls Enter valid username";
+        } else {
+          document.getElementById("errmsg").innerHTML = "";
+        }
+      }
+
+      function handlepw() {
+        let pw = document.getElementById("pw").value;
+        let cpw = document.getElementById("cpw").value;
+        if (pw !== cpw) {
+          alert("Password doesnot match!!");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divone">
+        Div one content is here.
+        <button onclick="myfun('divone')">Divone</button>
+    </div>
+
+    <div id="divtwo">
+        Div one content is here.
+        <button onclick="myfun('divtwo')">divtwo</button>
+    </div>
+
+    <div id="divthree">
+        Div one content is here.
+        <button onclick="myfun('divthree')">divthree</button>
+    </div>
+
+    <script>
+        function myfun(paravalue){
+            var backUp = document.body.innerHtml;
+            var divContent = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML=divContent;
+            window.print();
+            document.body.innerHTML=backUp;
+        }
+    </script>
+    
+</body>
+</html>

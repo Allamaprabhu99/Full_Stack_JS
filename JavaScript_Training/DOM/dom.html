@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="div1" id="tit">Dom Demo</h1>
+    <p class="div1"><span>Document object model</span></p>
+    <p class="div1">DOM will helps us manipulate the html elements</p>
+    <button onclick="handleclick()">change color</button>
+    <script>
+        let ptags=document.getElementsByTagName("p")
+        console.log(ptags[0].innerText)
+        
+        let div1tags=document.getElementsByClassName("div1")
+        console.log(div1tags)
+
+       function handleclick()
+       {
+        console.log("button clicked...")
+        document.getElementById("tit").style.color="red"
+       }
+    </script>
+</body>
+</html>
