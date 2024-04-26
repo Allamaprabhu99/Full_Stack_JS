@@ -20,10 +20,10 @@
   "name": "web-resources",
   "version": "1.0.0",
   "description": "Welocme Full Stack Development",
-  "main": "Node.js",
+  "main": "Full_Stack_JS.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Allamaprabhu99/node.git"
+    "url": "git+https://github.com/Allamaprabhu99/Full_Stack_JS.git"
   },
   "keywords": [
     "Developer"
@@ -31,7 +31,7 @@
   "author": "Allamaprabhu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Allamaprabhu99/node/issues"
+    "url": "https://github.com/Allamaprabhu99/Full_Stack_JS/issues"
   },
-  "homepage": "https://github.com/Allamaprabhu99/node#readme"
+  "homepage": "https://github.com/Allamaprabhu99/Full_Stack_JS#readme"
 }
